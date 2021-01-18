@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Илья Шишаев](https://up.htmlacademy.ru/htmlcss/30/user/1618029).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
