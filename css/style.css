@@ -47,8 +47,6 @@
     --basic-dark-yellow: #e5a722;
 }
 
-/* -- INDEX -- */
-
 /* Global */
 
 .hidden {
@@ -59,9 +57,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
   color: var(--basic-extra-dark);
-  background: var(--basic-white);
 }
 
 img {
@@ -402,8 +398,6 @@ img {
   padding: 17px 83px;
   background-color: var(--basic-light-red);
 }
-
-/* -- CATALOG -- */
 
 /* Filters */
 
