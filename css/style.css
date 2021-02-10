@@ -71,12 +71,12 @@ img {
 
 /* Main Header */
 
-.main-header {
+.header {
   background-color: var(--basic-neutral);
   color: var(--basic-black);
 }
 
-.main-navigation {
+.header-navigation {
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -87,17 +87,17 @@ img {
   list-style: none;
 }
 
-.main-navigation a {
+.header-navigation a {
   text-decoration: none;
   color: var(--basic-black);
 }
 
-.main-navigation a:hover,
-.main-navigation a:focus {
+.header-navigation a:hover,
+.header-navigation a:focus {
   color: var(--basic-light-red);
 }
 
-.main-navigation a:active {
+.header-navigation a:active {
   color: var(--basic-black);
   opacity: 0.3;
 }
