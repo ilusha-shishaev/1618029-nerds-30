@@ -319,10 +319,6 @@ img {
   list-style: none;
 }
 
-.social-icon {
-  text-decoration: none;
-}
-
 .footer-slogan {
   font-weight: 700;
   font-size: 36px;
@@ -336,6 +332,19 @@ img {
   line-height: 22px;
   color: var(--basic-dark);
 }
+.social-icon {
+  text-decoration: none;
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  display: inline-block;
+
+}
+.footer-social {
+  background-color: var(--basic-dark-yellow);
+}
+
 
 /* Modal */
 
@@ -530,12 +539,12 @@ img {
   background-color: var(--basic-dark-red);
 }
 
-.catalog-navigation-list a {
+.pagination a {
   text-decoration: none;
   color: var(--basic-black);
 }
 
-.catalog-navigation-list li {
+.pagination li {
   display: inline-block;
 }
 
