@@ -124,21 +124,24 @@ img {
 }
 
 .button {
-  font: inherit;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
+  background-color: var(--basic-red);
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
   border: 0;
   border-radius: 3px;
+  padding: 16px 20px;
 }
 
 .slide-button {
-  padding: 16px 54px;
+  display: inline-block;
+  min-width: 200px;
   background-color: var(--basic-light-red);
 }
 
@@ -345,7 +348,7 @@ img {
 
 .modal-form input,
 .modal-form textarea {
-  font: inherit;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
   background-color: transparent;
   border: 2px solid #D7DCDE;
@@ -384,7 +387,7 @@ img {
 }
 
 .modal-close {
-  font: inherit;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
