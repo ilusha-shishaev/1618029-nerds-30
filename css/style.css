@@ -179,47 +179,47 @@ img {
   text-transform: uppercase;
 }
 
-.service-button-1 {
-  padding: 16px 40px;
-  background-color: var(--basic-light-red);
+.service-web .service-button {
+padding: 16px 40px;
+background-color: var(--basic-light-red);
 }
 
-.service-button-1:hover,
-.service-button-1:focus {
+.service-web .service-button:hover,
+.service-web .service-button:focus {
   background-color: var(--basic-red);
 }
 
-.service-button-1:active {
+.service-web .service-button:active {
   background-color: var(--basic-dark-red);
   color: rgba(255, 255, 255, 0.3);
 }
 
-.service-button-2 {
+.service-app .service-button {
   padding: 16px 40px;
   background-color: var(--basic-light-green);
 }
 
-.service-button-2:hover,
-.service-button-2:focus {
+.service-app .service-button:hover,
+.service-app .service-button:focus {
   background-color: var(--basic-green);
 }
 
-.service-button-2:active {
+.service-app .service-button:active {
   background-color: var(--basic-dark-green);
   color: rgba(255, 255, 255, 0.3);
 }
 
-.service-button-3 {
+.service-presentation .service-button {
   padding: 16px 40px;
   background-color: var(--basic-light-yellow);
 }
 
-.service-button-3:hover,
-.service-button-3:focus {
+.service-presentation .service-button:hover,
+.service-presentation .service-button:focus {
  background-color: var(--basic-yellow);
 }
 
-.service-button-3:active {
+.service-presentation .service-button:active {
   background-color: var(--basic-dark-yellow);
   color: rgba(255, 255, 255, 0.3);
 }
@@ -341,10 +341,6 @@ img {
   display: inline-block;
 
 }
-.footer-social {
-  background-color: var(--basic-dark-yellow);
-}
-
 
 /* Modal */
 
