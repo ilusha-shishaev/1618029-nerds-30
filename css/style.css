@@ -28,10 +28,17 @@
 
 :root {
     --basic-black: #000000;
-    --basic-extra-dark: #283136;
-    --basic-dark: #444444;
-    --basic-light-dark: #666666;
+    --basic-dark-100: #283136;
+    --basic-dark-200: #444444;
+    --basic-dark-300: #666666;
+    --basic-dark-400: #b4b9bb;
+
     --basic-neutral: #eeeeee;
+    --basic-neutral-100: #e1e1e1;
+    --basic-neutral-200: #dfdfdf;
+    --basic-neutral-300: #d5d5d5;
+    --basic-neutral-400: #d7dcde;
+
     --basic-white: #ffffff;
 
     --basic-red: #e74246;
@@ -57,7 +64,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: var(--basic-extra-dark);
+  color: var(--basic-dark-100);
 }
 
 img {
@@ -260,7 +267,7 @@ background-color: var(--basic-light-red);
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: var(--basic-extra-dark);
+  color: var(--basic-dark-100);
 }
 
 /* Clients */
@@ -285,7 +292,7 @@ background-color: var(--basic-light-red);
   width: 319px;
   height: 308px;
   background-color: var(--basic-neutral);
-  color: var(--basic-light-dark);
+  color: var(--basic-dark-300);
 }
 
 .footer-contacts-title {
@@ -306,7 +313,7 @@ background-color: var(--basic-light-red);
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: var(--basic-light-dark);
+  color: var(--basic-dark-300);
   text-decoration: none;
 }
 
@@ -337,7 +344,7 @@ background-color: var(--basic-light-red);
   width: 81px;
   height: 81px;
   border-radius: 50%;
-  background-color: #e1e1e1;
+  background-color: var(--basic-neutral-100);
   display: inline-block;
 
 }
@@ -356,19 +363,19 @@ background-color: var(--basic-light-red);
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
   background-color: transparent;
-  border: 2px solid #D7DCDE;
+  border: 2px solid var("--basic-neutral-400");
   border-radius: 3px;
 }
 
 .modal-form input:hover,
 .modal-form textarea:hover {
-  border: 2px solid #B4B9BB;
+  border: 2px solid var("--basic-dark-400");
 }
 
 .modal-form input:focus,
 .modal-form textarea:focus {
   outline: none;
-  border: 2px solid #000000;
+  border: 2px solid var("--basic-black");
 }
 
 .modal-title {
@@ -433,7 +440,7 @@ background-color: var(--basic-light-red);
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  color: var(--basic-extra-dark);
+  color: var(--basic-dark-100);
   text-transform: uppercase;
 }
 
@@ -449,11 +456,11 @@ background-color: var(--basic-light-red);
 
 .filter-button:hover,
 .filter-button:focus {
-  background-color: #DFDFDF;
+  background-color: var(--basic-neutral-200);
 }
 
 .filter-button:active {
-  background-color: #D5D5D5;
+  background-color: var(--basic-neutral-300);
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -498,7 +505,7 @@ background-color: var(--basic-light-red);
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: var(--basic-light-dark);
+  color: var(--basic-dark-300);
   background-color: var(--basic-neutral);
   text-align: center;
 }
@@ -558,11 +565,11 @@ background-color: var(--basic-light-red);
 .button-next:hover,
 .button-number:focus,
 .button-next:focus {
-  background-color: #DFDFDF;
+  background-color: var(--basic-neutral-200);
 }
 
 .button-number:active,
 .button-next:active {
-  background-color: #D5D5D5;
+  background-color: var(--basic-neutral-300);
   color: rgba(0, 0, 0, 0.3);
 }
