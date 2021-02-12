@@ -74,7 +74,7 @@ img {
 
 /* Main Header */
 
-.header {
+.main-header {
   background-color: var(--basic-neutral);
   color: var(--basic-black);
 }
@@ -131,7 +131,7 @@ img {
 }
 
 .button {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -360,22 +360,22 @@ background-color: var(--basic-light-red);
 
 .modal-form input,
 .modal-form textarea {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: inherit;
   font-weight: 400;
   background-color: transparent;
-  border: 2px solid var("--basic-neutral-400");
+  border: 2px solid var(--basic-neutral-400);
   border-radius: 3px;
 }
 
 .modal-form input:hover,
 .modal-form textarea:hover {
-  border: 2px solid var("--basic-dark-400");
+  border: 2px solid var(--basic-dark-400);
 }
 
 .modal-form input:focus,
 .modal-form textarea:focus {
   outline: none;
-  border: 2px solid var("--basic-black");
+  border: 2px solid var(--basic-black);
 }
 
 .modal-title {
@@ -501,7 +501,7 @@ background-color: var(--basic-light-red);
   list-style: none;
 }
 
-.product-window {
+.product-panel {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -510,35 +510,35 @@ background-color: var(--basic-light-red);
   text-align: center;
 }
 
-.product-window-item {
+.product-panel-item {
   color: var(--basic-black);
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.product-window-item:hover,
-.product-window-item:focus {
+.product-panel-item:hover,
+.product-panel-item:focus {
   color: var(--basic-light-red);
 }
 
-.product-window-item:active {
+.product-panel-item:active {
   color: var(--basic-black);
   opacity: 0.3;
 }
 
-.product-window-button {
+.product-panel-button {
   color: var(--basic-white);
   background-color: var(--basic-light-red);
   display: inline-block;
   min-width: 160px;
 }
 
-.product-window-button:hover,
-.product-window-button:focus {
+.product-panel-button:hover,
+.product-panel-button:focus {
   background-color: var(--basic-red);
 }
 
-.product-window-button:active {
+.product-panel-button:active {
   background-color: var(--basic-dark-red);
 }
 
