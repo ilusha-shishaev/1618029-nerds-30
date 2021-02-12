@@ -349,6 +349,17 @@ background-color: var(--basic-light-red);
   margin-top: 78px;
 }
 
+.footer-social {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social .footer-slogan-description {
+  grid-column: 2 / -1;
+}
+
 .footer-contacts {
   width: 319px;
   height: 308px;
@@ -412,11 +423,29 @@ background-color: var(--basic-light-red);
 
 /* Modal */
 
+/* Не уверен, правильно ли яя сделал, тут тяжело, наверно много лишнего понаписал */
+
 .modal {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-black);
+  width: 960px;
+  height: 590px;
+  box-sizing: border-box;
+  padding: 0 100px;
+  margin: 0;
+  border: 1px solid brown;
+}
+
+.modal-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+}
+
+.modal-form .button-modal-form {
+  grid-column: 1 / 2;
 }
 
 .modal-form input,
