@@ -146,6 +146,9 @@ img {
 
 .slides-list {
   list-style: none;
+  display: grid;
+  margin: 0;
+  padding: 0;
 }
 
 .slide-title {
@@ -201,6 +204,11 @@ img {
 
 .services-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  column-gap: 100px;
+  margin: 0;
+  padding: 80px 0;
 }
 
 .service-title {
