@@ -65,6 +65,13 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-dark-100);
+  margin: 0;
+  padding: 0;
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 img {
@@ -72,11 +79,16 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
 /* Main Header */
 
 .main-header {
   background-color: var(--basic-neutral);
   color: var(--basic-black);
+  background-size: 120%;
 }
 
 .header-navigation {
@@ -84,10 +96,17 @@ img {
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
+
+  display: grid;
+  grid-template-columns: max-content 1fr min-content;
+
 }
 
 .site-navigation {
   list-style: none;
+
+  margin: 0;
+  padding: 0;
 }
 
 .header-navigation a {
@@ -111,6 +130,12 @@ img {
   color: var(--basic-black);
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 0;
 }
 
 /* Slides */
