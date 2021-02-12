@@ -266,6 +266,13 @@ background-color: var(--basic-light-red);
 
 /* Studio */
 
+.studio {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 0;
+  padding: 73px 0;
+}
+
 .studio-title {
   font-weight: 500;
   font-size: 45px;
@@ -305,9 +312,26 @@ background-color: var(--basic-light-red);
 
 /* Clients */
 
+/* [1] Не знал как точно сделать тут, паддингами или высоту задать, оставил так, потому что в макете явно ровно задана высота, а отступы разные, либо это нужно дальше будет делать флексами. Но так как задал высоту, всё прижато к верху. Пока оставил так */
+
+.clients {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 180px;
+  margin: 0;
+  padding-top: 20px;
+
+  vertical-align: middle;
+
+  border: 1px solid brown; /* Оставил для наглядности */
+}
+
+/* [2] Тут наверно тоже не нужно было трогать, но дабы не прижимались к левому углу логотипы, задал джустивайф-сэлф по центру. Вот и не знаю как выравнить их по вертикали ещё так же, потому что если задать им паддинг сейчас даже, то верха логотипов будут на одном уровне друг с другом, а нужно чтобы они отцентровались все */
+
 .client-logo {
   color: var(--basic-black);
   opacity: 0.2;
+  justify-self: center;
 }
 
 .client-logo:hover,
@@ -320,6 +344,10 @@ background-color: var(--basic-light-red);
 }
 
 /* Footer */
+
+.footer-map {
+  margin-top: 78px;
+}
 
 .footer-contacts {
   width: 319px;
