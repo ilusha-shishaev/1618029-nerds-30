@@ -530,16 +530,29 @@ background-color: var(--basic-light-red);
 
 /* Filters */
 
+.page-catalog {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 40px;
+}
+
+.filters {
+  grid-column: 1 / 4;
+}
+
 .main-title {
   color: var(--basic-black);
   text-align: center;
   background-color: var(--basic-neutral);
+  padding: 78px 0 108px 0;
 }
 
 .main-title h1 {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  margin: 0;
+  padding: 0;
 }
 
 .filter legend {
@@ -550,12 +563,22 @@ background-color: var(--basic-light-red);
   text-transform: uppercase;
 }
 
+.filter-price {
+  margin: 0;
+  padding: 0;
+}
+
 .filter-price label {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-dark-100);
   text-transform: uppercase;
+}
+
+.filter-price input {
+  width: 80px;
+  height: 38px;
 }
 
 .filter ul {
@@ -580,12 +603,21 @@ background-color: var(--basic-light-red);
 
 /* Filter Products */
 
+.filter-products {
+  grid-column: 5 / 13;
+}
+
 .filter-products-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
+}
+
+.filter-products ul {
+  margin: 0;
+  padding: 0;
 }
 
 .filter-products ul {
@@ -611,8 +643,17 @@ background-color: var(--basic-light-red);
 
 /* Catalog */
 
+.catalog {
+  grid-column: 5 / 13;
+}
+
 .catalog ul {
   list-style: none;
+}
+
+.products-list {
+  margin: 0;
+  padding: 0;
 }
 
 .product-panel {
@@ -622,6 +663,17 @@ background-color: var(--basic-light-red);
   color: var(--basic-dark-300);
   background-color: var(--basic-neutral);
   text-align: center;
+  width: 358px;
+}
+
+.product-panel h3 {
+  margin: 0;
+  padding: 26px 0 12px 0;
+}
+
+.product-panel p {
+  margin: 0;
+  padding: 0;
 }
 
 .product-panel-item {
@@ -645,6 +697,7 @@ background-color: var(--basic-light-red);
   background-color: var(--basic-light-red);
   display: inline-block;
   min-width: 160px;
+  margin: 32px 0 44px 0;
 }
 
 .product-panel-button:hover,
@@ -654,6 +707,10 @@ background-color: var(--basic-light-red);
 
 .product-panel-button:active {
   background-color: var(--basic-dark-red);
+}
+
+.pagination {
+  padding: 54px 0 0 0;
 }
 
 .pagination a {
