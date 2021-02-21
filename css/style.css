@@ -319,7 +319,6 @@ background-color: var(--basic-light-red);
   justify-items: center;
   margin: 0;
   padding-top: 20px;
-  align-items: center;
   border: 1px solid brown; /* Оставил для наглядности */
 }
 
@@ -440,36 +439,35 @@ background-color: var(--basic-light-red);
 
 .modal-form {
   display: grid;
-  grid-template-columns: repeat (8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 40px;
-
 }
 
+/* [1] Тут мог у textarea подогнать отступы, чтобы как в макете получилось, (padding: 16px 414px 84px 16px), но при вводе комментария было бы всё некрасиво прижато по левому углу, поэтому сделал как у инпутов */
 
-.modal-form .button-modal-form {
-  grid-column: 1 / 4;
-}
-
-.modal-form input {
-  width: 360px;
-  height: 50px;
-}
-
+.modal-form input,
 .modal-form textarea {
-  min-width: 760px;
-  min-height: 118px;
+  padding: 16px;
+  margin-top: 9px;
 }
 
-.modal-form label:nth-child(1) {
-  grid-column: 1 / 5;
+.modal-form-name {
+  display: grid;
+  grid-column: span 4;
 }
 
-.modal-form label:nth-child(2) {
-  grid-column: 5 / 9;
+.modal-form-email {
+  display: grid;
+  grid-column: span 4;
 }
 
-.modal-form label:nth-child(3) {
-  grid-column: 1 / 9;
+.modal-form-comments {
+  display: grid;
+  grid-column: span 8;
+}
+
+.button-modal-form {
+  grid-column: span 3;
 }
 
 .modal-form input,
