@@ -530,12 +530,12 @@ background-color: var(--basic-light-red);
 
 .page-catalog {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 40px;
 }
 
 .filters {
-  grid-column: 1 / 4;
+  grid-column: 1 / 2;
 }
 
 .main-title {
@@ -574,9 +574,10 @@ background-color: var(--basic-light-red);
   text-transform: uppercase;
 }
 
+/* [2] Оставил тут пока только отступы */
+
 .filter-price input {
-  width: 80px;
-  height: 38px;
+  padding: 8px;
 }
 
 .filter ul {
@@ -602,7 +603,7 @@ background-color: var(--basic-light-red);
 /* Filter Products */
 
 .filter-products {
-  grid-column: 5 / 13;
+  grid-column: 2 / 4;
 }
 
 .filter-products-title {
@@ -642,7 +643,7 @@ background-color: var(--basic-light-red);
 /* Catalog */
 
 .catalog {
-  grid-column: 5 / 13;
+  grid-column: 2 / 4;
 }
 
 .catalog ul {
@@ -650,6 +651,10 @@ background-color: var(--basic-light-red);
 }
 
 .products-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 42px;
+  row-gap: 32px;
   margin: 0;
   padding: 0;
 }
@@ -661,7 +666,6 @@ background-color: var(--basic-light-red);
   color: var(--basic-dark-300);
   background-color: var(--basic-neutral);
   text-align: center;
-  width: 358px;
 }
 
 .product-panel h3 {
