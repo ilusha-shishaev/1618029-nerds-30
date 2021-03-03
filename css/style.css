@@ -88,6 +88,13 @@ img {
 .main-header {
   background-color: var(--basic-neutral);
   color: var(--basic-black);
+
+  outline-offset: -1px;
+  outline: 1px solid gold;
+}
+
+.header-logo {
+  align-self: flex-end;
 }
 
 .header-navigation {
@@ -129,6 +136,7 @@ img {
   color: var(--basic-black);
   text-transform: uppercase;
   text-decoration: none;
+  align-self: flex-end;
 }
 
 .container {
@@ -149,6 +157,8 @@ img {
   padding: 0;
 }
 
+/* Добавил отступы, чтобы соответствовать макету */
+
 .slide-title {
   font-weight: 500;
   font-size: 55px;
@@ -156,6 +166,14 @@ img {
   color: var(--basic-black);
   margin: 0;
   padding: 0;
+  padding-top: 78px;
+}
+
+.slide-description {
+  margin: 0;
+  padding: 0;
+  padding-top: 37px;
+  margin-bottom: 25px;
 }
 
 .button {
@@ -178,6 +196,7 @@ img {
   display: inline-block;
   min-width: 200px;
   background-color: var(--basic-light-red);
+  margin-bottom: 80px;
 }
 
 .slide-button:hover,
@@ -201,8 +220,6 @@ img {
 }
 
 /* Services */
-
-/* Оставил гриды, так как уже всё выглядит адаптивно. Сделал отступы вокруг, чтобы контент при добавлении не прилипал друг к другу */
 
 .services-list {
   list-style: none;
@@ -276,22 +293,24 @@ background-color: var(--basic-light-red);
 
 /* Studio */
 
+/* Сделал 12 колонок, теперь красивенько, по макету */
+
 .studio {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
   margin: 0;
   padding: 73px 0;
+  column-gap: 40px;
 }
 
-/* Задал ширину, чтобы не прилипали контейнеры друг к другу */
-
 .left-column {
-  width: 650px;
+  grid-column: 1 / 8;
   outline-offset: -1px;
   outline: 1px solid gold;
 }
 
 .right-column {
+  grid-column: 9 / -1;
   outline-offset: -1px;
   outline: 1px solid gold;
 }
@@ -315,8 +334,6 @@ background-color: var(--basic-light-red);
   text-align: center;
 }
 
-/* Задал флекс и перенос, чтобы при добавлении контента был перенос.  */
-
 .statistics-list {
   list-style: none;
   margin: 0;
@@ -325,15 +342,13 @@ background-color: var(--basic-light-red);
   flex-wrap: wrap;
 }
 
-/* Задал ширину и отступы, так же отменил у каждого третьего элемента отступ, чтобы все элементы поместились в контейнер */
-
 .statistics-item {
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
   color: var(--basic-black);
 
-  width: 120px;
+  width: 110px;
   margin-right: 10px;
   margin-bottom: 10px;
 
@@ -364,7 +379,7 @@ background-color: var(--basic-light-red);
   justify-items: center;
   margin: 0;
   padding-top: 20px;
-  border: 1px solid brown; /* Оставил для наглядности */
+  border: 1px solid brown;
 }
 
 
@@ -390,9 +405,12 @@ background-color: var(--basic-light-red);
   margin-top: 78px;
 }
 
+/* Исправил подвал (убрал отступы у текста и сделал отступ между гридами */
+
 .footer-social {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 40px;
   padding: 0;
   margin: 0;
 
@@ -405,7 +423,6 @@ background-color: var(--basic-light-red);
   outline: 1px solid gold;
   margin: 0;
   padding: 0;
-  padding-left: 120px;
 }
 
 .footer-slogan-description {
@@ -514,8 +531,6 @@ background-color: var(--basic-light-red);
   grid-template-columns: repeat(8, 1fr);
   gap: 40px;
 }
-
-/* [1] Тут мог у textarea подогнать отступы, чтобы как в макете получилось, (padding: 16px 414px 84px 16px), но при вводе комментария было бы всё некрасиво прижато по левому углу, поэтому сделал как у инпутов */
 
 .modal-form input,
 .modal-form textarea {
@@ -651,8 +666,6 @@ background-color: var(--basic-light-red);
   text-transform: uppercase;
 }
 
-/* [2] Оставил тут пока только отступы */
-
 .filter-price input {
   padding: 8px;
 }
@@ -681,8 +694,6 @@ background-color: var(--basic-light-red);
 
 /* Filter Products */
 
-/* Не уверен правильно ли сделал тут */
-
 .filter-products {
   display: flex;
   justify-content: flex-end;
@@ -698,6 +709,8 @@ background-color: var(--basic-light-red);
   margin-right: 25px;
 }
 
+/* Добавил отступ справа, чтобы пункты не прижимались вплотную */
+
 .filter-products-title {
   margin-right: auto;
   font-weight: 700;
@@ -705,6 +718,7 @@ background-color: var(--basic-light-red);
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
+  padding-right: 20px;
 }
 
 .filter-products ul {
