@@ -88,6 +88,7 @@ img {
 .main-header {
   background-color: var(--basic-neutral);
   color: var(--basic-black);
+  padding-top: 50px;
 
   outline-offset: -1px;
   outline: 1px solid gold;
@@ -95,6 +96,9 @@ img {
 
 .header-logo {
   align-self: flex-end;
+
+  outline-offset: -1px;
+  outline: 1px solid gold;
 }
 
 .header-navigation {
@@ -109,10 +113,25 @@ img {
 }
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 
+  justify-content: center;
+
+
   margin: 0;
+  margin-top: auto;
   padding: 0;
+}
+
+.site-navigation a {
+  display: inline-block;
+  margin-right: 45px;
+  margin-bottom: 10px;
+
+  outline-offset: -1px;
+  outline: 1px solid gold;
 }
 
 .header-navigation a {
@@ -137,6 +156,18 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   align-self: flex-end;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.cart-link::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -40px;
+  width: 15px;
+  height: 15px;
+  background: transparent url("../img/cart-icon.svg") no-repeat;
 }
 
 .container {
@@ -156,8 +187,6 @@ img {
   margin: 0;
   padding: 0;
 }
-
-/* Добавил отступы, чтобы соответствовать макету */
 
 .slide-title {
   font-weight: 500;
@@ -246,6 +275,25 @@ img {
   text-transform: uppercase;
 }
 
+.service-item {
+  padding-top: 154px;
+  background-size: 300px 146px;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.service-web {
+  background-image: url(../img/service-websites.png);
+}
+
+.service-app {
+  background-image: url(../img/service-apps.png);
+}
+
+.service-presentation {
+  background-image: url(../img/service-presentation.png );
+}
+
 .service-web .service-button {
 padding: 16px 40px;
 background-color: var(--basic-light-red);
@@ -293,14 +341,35 @@ background-color: var(--basic-light-red);
 
 /* Studio */
 
-/* Сделал 12 колонок, теперь красивенько, по макету */
-
 .studio {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin: 0;
   padding: 73px 0;
   column-gap: 40px;
+}
+
+.studio-works-list {
+  margin: 0;
+  padding: 0;
+}
+
+.studio-work-item {
+  list-style: none;
+  position: relative;
+  padding-left: 37px;
+  margin-bottom: 24px;
+}
+
+.studio-work-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-light-red);
 }
 
 .left-column {
@@ -386,8 +455,19 @@ background-color: var(--basic-light-red);
 .client-logo {
   color: var(--basic-black);
   opacity: 0.2;
+  position: relative;
 
+}
 
+.client-logo:not(:nth-of-type(4n))::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  right: -48px;
+  bottom: 50%;
+  transform: translateY(40%);
+  background-color: var(--basic-dark-200);
 }
 
 .client-logo:hover,
@@ -405,13 +485,11 @@ background-color: var(--basic-light-red);
   margin-top: 78px;
 }
 
-/* Исправил подвал (убрал отступы у текста и сделал отступ между гридами */
-
 .footer-social {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 40px;
-  padding: 0;
+  padding: 70px 0;
   margin: 0;
 
   outline-offset: -1px;
@@ -472,7 +550,7 @@ background-color: var(--basic-light-red);
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 70px 0;
+  padding: 0;
 
 
   outline-offset: -1px;
@@ -481,6 +559,7 @@ background-color: var(--basic-light-red);
 
 .social-item {
   margin-right: 9px;
+  position: relative;
 }
 
 .footer-slogan {
@@ -508,7 +587,36 @@ background-color: var(--basic-light-red);
   border-radius: 50%;
   background-color: var(--basic-neutral-100);
   display: inline-block;
+}
 
+.icon-vk::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 15px;
+  top: 35px;
+  left: 27px;
+  background-image: url(../img/vk-icon.svg);
+}
+
+.icon-fb::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 22px;
+  top: 30px;
+  left: 33px;
+  background-image: url(../img/fb-icon.svg);
+}
+
+.icon-insta::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 30px;
+  left: 30px;
+  background-image: url(../img/insta-icon.svg);
 }
 
 /* Modal */
@@ -708,8 +816,6 @@ background-color: var(--basic-light-red);
 .filter-products-item {
   margin-right: 25px;
 }
-
-/* Добавил отступ справа, чтобы пункты не прижимались вплотную */
 
 .filter-products-title {
   margin-right: auto;
